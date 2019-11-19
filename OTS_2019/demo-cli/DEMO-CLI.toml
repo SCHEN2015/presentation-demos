@@ -1,0 +1,32 @@
+name = "DEMO-CLI"
+description = "This is a demo for CLI"
+version = "1.0.1"
+modules = []
+groups = []
+
+[[packages]]
+name = "python3"
+version = "*"
+
+[[packages]]
+name = "python3-devel"
+version = "*"
+
+[customizations]
+hostname = "myhostname"
+
+[customizations.kernel]
+append = "nosmt=force"
+
+[[customizations.user]]
+name = "charles"
+description = "This is me."
+password = "$6$Quc9C6R28tXMi8Fy$mPNfogBpMxuHJjLNPSwVB3iwBAob1OK6fTG5rceZjk49zLrM.qD8fTSFK5IMAX9AJDFHaKkD4VlqluPXELi5n1"
+key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCE4yqF5Mo9Zrq6Aw+qZNgzrgz+lYeSthcT+7zOv0XahnUkstFxu0joG08Lj47X/6V25PSAg6wKix/sATCALuWTLgA00ATfVTp+okGhLzdSwAhixy/PcjR1w/bxhkpB7nnZUEQxd2Uy+VTjAFxawPc3aqRVqpoNnXqjMTN2XXM+wTX4iAErhPyohK2abhEKtVOG3hzpp8nnY/Yl92g0aO4PfgLuPVkTm12qO13VxfISJqjGnYOcA8dP5HlYga8JdyatpuOsbU6gsVvQnz9EbaMkx1rRHDT7ukUF1/5EExkhMKHzaFHOe5XHWnp2aqZtlvlyii/Eqr9BseyPthRsObjz"
+home = "/home/charles/"
+shell = "/usr/bin/bash"
+groups = ["users", "wheel"]
+
+[[customizations.sshkey]]
+user = "root"
+KEY = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCE4yqF5Mo9Zrq6Aw+qZNgzrgz+lYeSthcT+7zOv0XahnUkstFxu0joG08Lj47X/6V25PSAg6wKix/sATCALuWTLgA00ATfVTp+okGhLzdSwAhixy/PcjR1w/bxhkpB7nnZUEQxd2Uy+VTjAFxawPc3aqRVqpoNnXqjMTN2XXM+wTX4iAErhPyohK2abhEKtVOG3hzpp8nnY/Yl92g0aO4PfgLuPVkTm12qO13VxfISJqjGnYOcA8dP5HlYga8JdyatpuOsbU6gsVvQnz9EbaMkx1rRHDT7ukUF1/5EExkhMKHzaFHOe5XHWnp2aqZtlvlyii/Eqr9BseyPthRsObjz"

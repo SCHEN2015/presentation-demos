@@ -1,0 +1,33 @@
+name = "BLUEPRINT-NAME"
+description = "LONG FORM DESCRIPTION TEXT"
+version = "0.0.1"
+
+[[packages]]
+name = "package-name"
+version = "package-version"
+
+[[packages]]
+name = "package-name"
+version = "package-version"
+
+[customizations]
+hostname = "HOSTNAME"
+
+[customizations.kernel]
+append = "KERNEL OPTION"
+
+[[customizations.user]]
+name = "USER-NAME"
+description = "USER-DESCRIPTION"
+password = "PASSWORD-HASH"
+key = "ssh-rsa (...) key-name"
+home = "/home/USER-NAME/"
+shell = "/usr/bin/bash"
+groups = ["users", "wheel"]
+uid = NUMBER
+gid = NUMBER
+
+[[customizations.sshkey]]
+user = "root"
+KEY = "PUBLIC SSH KEY"
+
